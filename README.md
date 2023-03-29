@@ -99,7 +99,7 @@ class PhysicSystem (System):
                 d = dx**2 + dy**2 + dz**2
 
                 # Calcule the magnitude of the force what entity1 apply over entity2 
-                mag_f = self.gravitational_constant * ((m1 * m2) / d**2 + self.offset)
+                mag_f = self.gravitational_constant * ((m1 * m2) / d + self.offset)
 
                 # Using trigonometric to obtain the force vector
                 fx = mag_f * (dx / d)
